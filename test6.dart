@@ -10,6 +10,11 @@ class Solution {
             num++;
         }
     }
+    for(int i = 0; i<sList.length-1;i++){
+        if(tList.indexOf(sList[i])>tList.indexOf(sList[i+1])){
+            return false;
+        }
+    }
     return num==sList.length;
   }
 }
